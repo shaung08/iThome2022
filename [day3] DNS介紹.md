@@ -1,4 +1,4 @@
-# day3 DNS介紹
+# [day3] DNS介紹
 ### DNS簡介
 DNS可以將網域轉換為ip位址，例如將`www.example.com`轉為10.85.85.10，DNS Server大致分為四個部分
 
