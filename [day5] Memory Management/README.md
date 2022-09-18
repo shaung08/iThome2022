@@ -25,12 +25,12 @@ Mark & Sweep算法主要分為兩個階段，mark和sweep，在初始化object�
 #### Shared Memory
 在不同的process間使用同一個memory區段去共同控管，會需要考量的race condition(https://ithelp.ithome.com.tw/articles/10239243)的問題
 
-![](https://i.imgur.com/uOVhgzK.png)
+![](../img/memory01.png)
 
 #### Memory Passing
 先建立起溝通的pipe，然後將其分別丟入兩個不同的process，在不同的process中透過pipe溝通
 
-![](https://i.imgur.com/ddC9EnN.png)
+![](../img/memory02.png)
 
 ----
 以下偏hardware以及系統底層有簡易觀念了解架構即可

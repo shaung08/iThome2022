@@ -15,15 +15,15 @@ a電腦ip(1.2.3.4)傳送packet到b電腦ip(5.6.7.8)，其資料傳輸過程為�
 |Internet Control Protocol Layer|將packet透過ip傳輸|
 |Hardware Layer|將傳輸資料轉換成電路信號|
 
-![](https://i.imgur.com/NzWHpdI.png)
+![](../img/web_arc01.png)
 
 #### 封包傳送detail
 當packet傳輸到router時，router會檢查自己是否知道此ip位置在哪，如果不知道default會向上一層傳送資料，讓上一層繼續查找ip位置
-![](https://i.imgur.com/TCQUzKH.png)
+![](../img/web_arc02.png)
 
 ### http 總攬
 http設計於1990年代初期，是通過TCP與TLS發展而成的應用層協議(Application Protocol Layer)
-![](https://i.imgur.com/VpssVYK.png)
+![](../img/web_arc03.png)
 
 常見的http包含:
 1. http version: `http/1`, `http/1.1`, `http/2.0`
@@ -31,7 +31,7 @@ http設計於1990年代初期，是通過TCP與TLS發展而成的應用層協議
 2. header: `application/json`
 3. body: `body`
 4. url: `http://ip:port`
-![](https://i.imgur.com/ll72mfg.png)
+![](../img/web_arc04.png)
     
 #### web client
 當用戶端要開啟網站會發送一個原始請求來獲取該頁頁面的html、css、圖像、影片等等，網頁內通常會有超聯結，點擊超連結會將需求轉換為相對應http的request，而後response相對應內容回來。
@@ -54,7 +54,7 @@ web client和web server會透過http進行資料傳遞，中間通常會有一�
 
 ##### HTTP pipelining: 
 http的處理為request出去後，伺服器端response回來再發送新的請求，再http pipelining中可以不理會response多次發送request出去，僅限於idempotent methods像是`GET`,`PUT`,`DELETE`，再request失敗後可以重複再發送請求不影響結果。
-![](https://i.imgur.com/Aj8yoLh.png)
+![](../img/web_arc05.png)
 
 
 #### http/2.0
@@ -77,7 +77,7 @@ http的處理為request出去後，伺服器端response回來再發送新的請�
 6. UI Backend: 用來繪製小型基礎物件
 7. Data storage: 支援儲存data到本地如: localStorage, IndexedDB, WebSQL and FileSystem
 
-![](https://i.imgur.com/QQzBAgd.png)
+![](../img/web_arc06.png)
 
 
 

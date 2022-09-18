@@ -9,7 +9,7 @@ process架構圖如下所示
 * Data: 初始化資料區段(initialized data segment)，c++的global varaiable和static variable都會儲存於此處，包含read-only area和read-write area
 * Text: 文字區段(text segmentation)，這裡是用來儲存CPU執行指令，此處的文字區段都是read-only are，防止被改寫指定
 
-![](https://i.imgur.com/ga7X6Lx.png)
+![](../img/process01.png)
 
 
 #### PCB (Process Control Blocks)
@@ -23,7 +23,7 @@ process架構圖如下所示
 * Memory-management information: 包含Base limit register和page Table和Segment Table, 主要用來管理operating system實體、虛擬記憶體的使用。
 * I/O status information: 包含開啟中的檔案以及正在進行中的process資訊
 
-![](https://i.imgur.com/SJlOgkD.png)
+![](../img/process02.png)
 
 
 ## 參考

@@ -37,7 +37,7 @@ $ docker-compose up -d
 ```
 
 等到 container 狀態為 healthy 即可以登入 gitlab
-![](https://i.imgur.com/FNtDOaG.png)
+![](../img/git01.png)
 
 ## gitlabe 備份設定
 ### gitlab 內部定期備份設定
@@ -48,7 +48,7 @@ $ nano /etc/gitlab/gitlab.rb
 $ gitlab-ctl reconfigure
 ```
 
-![](https://i.imgur.com/7d1V0fN.png)
+![](../img/git02.png)
 
 ### 使用 rclone 將 onedrive service 與本地端綁定
 
@@ -224,10 +224,10 @@ e/n/d/r/c/s/q> q     # q退出，配置完成
 ```
 $ crontab -e
 ```
-![](https://i.imgur.com/eAbcySm.png)
+![](../img/git03.png)
 
 **`baskup.sh`**
-![](https://i.imgur.com/OsbyKN5.png)
+![](../img/git04.png)
 
 #### restart crontab
 ```
@@ -289,7 +289,7 @@ $ git remote add origin http://10.101.6.80/5g-use-case/ai_platform.git
 $ git push -u origin master
 ```
 
-![](https://i.imgur.com/GODUJkh.png)
+![](../img/git05.png)
 
 ## gitlab備份還原
 
@@ -298,7 +298,7 @@ $ git push -u origin master
 $ /usr/bin/gitlab-rake gitlab:backup:create
 ```
 備份資料會儲存於 `/var/opt/gitlab/backups/<backup_time>_gitlab_backup.tar`
-![](https://i.imgur.com/36iyBSs.png)
+![](../img/git06.png)
 
 ### 還原 gitlab 
 
