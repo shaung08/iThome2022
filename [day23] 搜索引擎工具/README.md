@@ -1,4 +1,4 @@
-# [day 23] 搜索引擎工具
+# [day23] 搜索引擎工具
 ### Elasticsearch 
 Elasticsearch 是一個分散式的搜索引擎，假設今天要搜索有關 dogs的貼文，一般使用關鍵是自料搜索會像`select * from posts WHERE content LIKE %dog%;`，但如果是使用dog關鍵次則無法被上述查詢找到，因此就出現了Elasticsearch的關鍵字搜索引擎，
 Elasticsearch使用invert index用來儲存文字到文件映射關係，其資料結構類似map，例如:

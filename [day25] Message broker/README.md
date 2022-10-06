@@ -1,3 +1,4 @@
+# [day25] Message broker
 Message broker是作為應用程式與應用程式之間的模塊，用來交換訊息，其運作方式會有一個publisher和consumer，publisher會將訊息進行傳遞出來，而consumer會去訂閱訊息，如此一來雙方互相不需要知道彼此的ip位置，如database的概念，其優點為將訊息儲存在message queue裡面，不會因為應用程式crash導致訊息消失。
 
 ### RabbitMQ
